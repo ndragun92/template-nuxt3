@@ -11,11 +11,6 @@ const props = defineProps<{
 }>();
 
 const returnLink = computed(() => {
-  const { navigate } = useNavigation();
-  let link = props?.to || "/";
-  if (!link.startsWith("/")) {
-    link = `/${link}`;
-  }
-  return navigate(link);
+  return props?.to || '/'
 });
 </script>
