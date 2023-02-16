@@ -11,6 +11,6 @@ const props = defineProps<{
 }>();
 
 const returnLink = computed(() => {
-  return props?.to || "/"
+  return props?.to || "/";
 });
 </script>
