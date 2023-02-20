@@ -2,6 +2,9 @@
 import eslintPlugin from "vite-plugin-eslint";
 
 export default defineNuxtConfig({
+  experimental: {
+    emitRouteChunkError: "reload",
+  },
   nitro: {
     compressPublicAssets: true,
     routeRules: {
