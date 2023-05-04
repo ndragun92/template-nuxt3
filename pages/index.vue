@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4">Homepage</div>
+  <div class="p-4"><Icon name="mdi:github" /> Homepage</div>
 </template>
 
 <script lang="ts">
