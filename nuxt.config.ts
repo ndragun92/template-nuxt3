@@ -6,6 +6,13 @@ export default defineNuxtConfig({
     emitRouteChunkError: "reload",
     typedPages: true,
   },
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        moduleResolution: "bundler",
+      },
+    },
+  },
   nitro: {
     compressPublicAssets: true,
     routeRules: {
