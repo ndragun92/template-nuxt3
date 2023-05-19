@@ -16,6 +16,9 @@
       <li>
         <nuxt-link to="/lazy">Lazy</nuxt-link>
       </li>
+      <li>
+        <nuxt-link to="/food">Food</nuxt-link>
+      </li>
     </ul>
   </nav>
   <slot />
