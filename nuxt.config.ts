@@ -4,6 +4,7 @@ import eslintPlugin from "vite-plugin-eslint";
 export default defineNuxtConfig({
   experimental: {
     emitRouteChunkError: "reload",
+    typedPages: true,
   },
   nitro: {
     compressPublicAssets: true,
