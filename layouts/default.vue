@@ -10,6 +10,12 @@
       <li>
         <nuxt-link to="/jokes">Jokes</nuxt-link>
       </li>
+      <li>
+        <nuxt-link to="/internal">Internal</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/lazy">Lazy</nuxt-link>
+      </li>
     </ul>
   </nav>
   <slot />
