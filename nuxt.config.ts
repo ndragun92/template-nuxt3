@@ -42,5 +42,27 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     // https://github.com/MorevM/vue-transitions
     "@morev/vue-transitions/nuxt",
+    // https://v8.i18n.nuxtjs.org/getting-started/setup/
+    "@nuxtjs/i18n",
   ],
+  i18n: {
+    legacy: false,
+    baseUrl: "http://localhost:3000",
+    defaultLocale: "en",
+    fallbackLocale: "en",
+    lazy: true,
+    langDir: "lang",
+    locales: [
+      {
+        code: "en",
+        iso: "en-US",
+        files: ["en.json"],
+      },
+      {
+        code: "hr",
+        iso: "hr",
+        files: ["hr.json"],
+      },
+    ],
+  },
 });
