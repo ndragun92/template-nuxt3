@@ -9,7 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "engines": {
-    "node": "18.15.0"
+    "node": "18.x"
   },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-27821548.ab054e4",
