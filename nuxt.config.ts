@@ -2,10 +2,7 @@
 import eslintPlugin from "vite-plugin-eslint";
 
 export default defineNuxtConfig({
-  experimental: {
-    emitRouteChunkError: "reload",
-    typedPages: true,
-  },
+  devtools: { enabled: true },
   typescript: {
     tsConfig: {
       compilerOptions: {

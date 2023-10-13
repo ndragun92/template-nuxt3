@@ -3,7 +3,6 @@
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "noImplicitAny": false,
-    "importsNotUsedAsValues": "error",
-    "types": ["@unlighthouse/nuxt", "@types/wavesurfer.js"]
+    "importsNotUsedAsValues": "error"
   }
 }
