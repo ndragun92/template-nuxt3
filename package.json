@@ -11,35 +11,35 @@
     "postinstall": "nuxt prepare"
   },
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxt/image-edge": "^1.0.0-27821548.ab054e4",
-    "@nuxtjs/tailwindcss": "^6.4.1",
-    "@typescript-eslint/eslint-plugin": "^6.7.5",
-    "@typescript-eslint/parser": "^6.7.5",
-    "@vueuse/core": "^10.0.2",
-    "@vueuse/nuxt": "^10.0.2",
-    "eslint": "^8.35.0",
-    "eslint-config-prettier": "^9.0.0",
+    "@nuxt/image-edge": "^1.1.0-28373407.4ef2978",
+    "@nuxtjs/tailwindcss": "^6.10.1",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vueuse/core": "^10.7.0",
+    "@vueuse/nuxt": "^10.7.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "eslint-plugin-vue": "^9.9.0",
-    "nuxt": "^3.7.4",
-    "vue": "^3.3.4",
-    "vue-router": "^4.2.5",
-    "nuxt-icon": "^0.5.0",
-    "prettier": "^3.0.3",
-    "sass": "^1.58.3",
-    "sass-loader": "^13.2.0",
-    "vite-plugin-eslint": "^1.8.1"
+    "eslint-plugin-vue": "^9.19.2",
+    "nuxt": "^3.8.2",
+    "nuxt-icon": "^0.6.7",
+    "prettier": "^3.1.1",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "vite-plugin-eslint": "^1.8.1",
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5"
   },
   "dependencies": {
     "@morev/vue-transitions": "^2.3.6",
-    "@pinia/nuxt": "^0.4.7",
+    "@pinia/nuxt": "^0.5.1",
     "lodash-es": "^4.17.21",
-    "pinia": "^2.0.27"
+    "pinia": "^2.1.7"
   },
   "eslintConfig": {
     "env": {
@@ -58,7 +58,9 @@
       "parser": "@typescript-eslint/parser",
       "sourceType": "module"
     },
-    "plugins": ["@typescript-eslint"],
+    "plugins": [
+      "@typescript-eslint"
+    ],
     "rules": {
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/no-non-null-assertion": "off",
