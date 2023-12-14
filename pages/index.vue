@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8">
+  <div class="p-8 text-center">
     <NuxtImg class="block mx-auto w-12" src="/favicon.png" />
     <h1 class="font-bold text-center mt-12">
       Welcome to Nuxt 3 Starter Template Kit
