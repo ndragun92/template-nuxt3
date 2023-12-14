@@ -33,18 +33,11 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/css/main.scss"],
   modules: [
-    // https://pinia.vuejs.org/ssr/nuxt.html
-    "@pinia/nuxt",
-    // https://tailwindcss.nuxt.dev/
-    "@nuxtjs/tailwindcss",
-    // https://v1.image.nuxtjs.org/get-started/
-    "@nuxt/image-edge",
-    // https://github.com/nuxt-modules/icon
-    // https://icones.js.org/collection/all?s=github
-    "nuxt-icon",
-    // https://vueuse.org/guide/#nuxt
-    "@vueuse/nuxt",
-    // https://github.com/MorevM/vue-transitions
-    "@morev/vue-transitions/nuxt",
+    "@pinia/nuxt", // https://pinia.vuejs.org/ssr/nuxt.html
+    "@nuxtjs/tailwindcss", // https://tailwindcss.nuxtjs.org
+    "nuxt-icon", // https://github.com/nuxt-modules/icon | https://icones.js.org/collection/all?s=github
+    "@vueuse/nuxt", // https://vueuse.org/guide/#nuxt
+    "@morev/vue-transitions/nuxt", // https://github.com/MorevM/vue-transitions
+    "@nuxt/image", // https://image.nuxt.com
   ],
 });
