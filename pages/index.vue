@@ -42,14 +42,6 @@
       <li>
         <a
           class="text-blue-500 hover:underline"
-          href="https://github.com/MorevM/vue-transitions"
-          target="_blank"
-          >@morev/vue-transitions/nuxt</a
-        >
-      </li>
-      <li>
-        <a
-          class="text-blue-500 hover:underline"
           href="https://image.nuxt.com"
           target="_blank"
           >@nuxt/image</a

@@ -37,7 +37,6 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss", // https://tailwindcss.nuxtjs.org
     "nuxt-icon", // https://github.com/nuxt-modules/icon | https://icones.js.org/collection/all?s=github
     "@vueuse/nuxt", // https://vueuse.org/guide/#nuxt
-    "@morev/vue-transitions/nuxt", // https://github.com/MorevM/vue-transitions
     "@nuxt/image", // https://image.nuxt.com
   ],
 });
