@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      baseURL: "",
+      // myValue: process.env.NUXT_PUBLIC_MY_VALUE,
     },
   },
   vite: {
