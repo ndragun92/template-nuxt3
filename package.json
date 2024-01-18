@@ -11,7 +11,7 @@
     "postinstall": "nuxt prepare"
   },
   "engines": {
-    "node": "20.x"
+    "node": ">=18.0.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
