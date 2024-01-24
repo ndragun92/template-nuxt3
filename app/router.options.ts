@@ -1,15 +1,16 @@
-import type { RouterConfig } from "@nuxt/schema";
-import { promiseTimeout } from "@vueuse/core";
+import type { RouterConfig } from '@nuxt/schema'
+import { promiseTimeout } from '@vueuse/core'
 
 export default <RouterConfig>{
-  async scrollBehavior(to, from, savedPosition) {
+  async scrollBehavior (...args) {
+    const [, , savedPosition] = args
     if (savedPosition) {
-      await promiseTimeout(50);
-      return savedPosition;
+      await promiseTimeout(50)
+      return savedPosition
     } else {
       return {
-        top: 0,
-      };
+        top: 0
+      }
     }
-  },
-};
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "extends": ["@nuxtjs/eslint-config-typescript"],
+  "rules": {
+    "vue/no-multiple-template-root": 0,
+    "no-console": "off",
+    "camelcase": "off",
+    "vue/static-class-names-order": "error"
+  },
+  "overrides": [
+    {
+      "files": ["pages/**/*.vue", "layouts/*.vue"],
+      "rules": {
+        "vue/multi-word-component-names": "off"
+      }
+    }
+  ]
+}

@@ -28,5 +28,5 @@
 </template>
 
 <script lang="ts" setup>
-const nuxtApp = useNuxtApp();
+const nuxtApp = useNuxtApp()
 </script>
