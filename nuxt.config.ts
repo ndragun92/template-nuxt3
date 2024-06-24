@@ -2,6 +2,9 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  future: {
+    compatibilityVersion: 3
+  },
   typescript: {
     // Enables strict typeCheck for development environment
     typeCheck: process.env.NODE_ENV === 'development'
