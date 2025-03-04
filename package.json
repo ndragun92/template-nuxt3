@@ -23,7 +23,6 @@
     "@nuxt/devtools": "latest",
     "@nuxt/eslint": "^1.0.0",
     "@nuxt/image": "^1.9.0",
-    "@nuxtjs/tailwindcss": "^6.13.1",
     "@pinia/nuxt": "^0.9.0",
     "@vueuse/core": "^12.5.0",
     "@vueuse/nuxt": "^12.5.0",
@@ -38,8 +37,10 @@
   },
   "dependencies": {
     "@nuxt/fonts": "^0.10.3",
+    "@tailwindcss/vite": "^4.0.9",
     "@vueuse/nuxt": "^12.5.0",
-    "pinia": "^2.3.1"
+    "pinia": "^2.3.1",
+    "tailwindcss": "^4.0.9"
   },
   "resolutions": {
     "cheerio": "1.0.0-rc.12"

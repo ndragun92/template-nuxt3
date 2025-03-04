@@ -25,10 +25,10 @@
       <li>
         <a
           class="hover:underline text-blue-500"
-          href="https://tailwindcss.nuxtjs.org"
+          href="https://tailwindcss.com"
           target="_blank"
         >
-          @nuxtjs/tailwindcss
+          tailwindcss
         </a>
       </li>
       <li>
