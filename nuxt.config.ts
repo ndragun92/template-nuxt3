@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     },
     asyncContext: true,
     appManifest: false,
-    buildCache: true, // Build Cache
+    buildCache: false, // Build Cache
   },
 
   imports: {
