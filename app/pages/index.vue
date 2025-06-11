@@ -4,23 +4,23 @@
     <h1 class="font-bold mt-12 text-center">
       Welcome to Nuxt 3 Starter Template Kit
     </h1>
-    <h2 class="font-semibold mb-2 mt-10">
-      Included Modules:
-    </h2>
+    <h2 class="font-semibold mb-2 mt-10">Included Modules:</h2>
     <ul class="flex flex-col gap-2">
       <li>
         <a
           class="hover:underline text-blue-500"
           href="https://nuxt.com/modules/security"
           target="_blank"
-        >nuxt-security</a>
+          >nuxt-security</a
+        >
       </li>
       <li>
         <a
           class="hover:underline text-blue-500"
           href="https://pinia.vuejs.org/ssr/nuxt.html"
           target="_blank"
-        >@pinia/nuxt</a>
+          >@pinia/nuxt</a
+        >
       </li>
       <li>
         <a
@@ -36,21 +36,24 @@
           class="hover:underline text-blue-500"
           href="https://github.com/nuxt-modules/icon"
           target="_blank"
-        >nuxt-icon</a>
+          >nuxt-icon</a
+        >
       </li>
       <li>
         <a
           class="hover:underline text-blue-500"
           href="https://vueuse.org/guide/#nuxt"
           target="_blank"
-        >@vueuse/nuxt</a>
+          >@vueuse/nuxt</a
+        >
       </li>
       <li>
         <a
           class="hover:underline text-blue-500"
           href="https://image.nuxt.com"
           target="_blank"
-        >@nuxt/image</a>
+          >@nuxt/image</a
+        >
       </li>
       <li class="mt-12">
         <a

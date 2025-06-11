@@ -4,16 +4,16 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 Live preview version [Template](https://template-nuxt3-ndragun92.vercel.app)
 
-## What this starter template contains?
+## What does this starter template contain?
 - Nuxt security module
 - ESLint module
-- Strict typeCheck (enabled on development)
+- Strict typeCheck (enabled in development)
 - Pinia
 - TailwindCSS
 - Nuxt Icons
 - Vue Use
 - Nuxt Image
-- Loaded main scss entry file
+- Loaded a main scss entry file
 - Injected scss utils which are globally available
 - Works with Node 20.x
 

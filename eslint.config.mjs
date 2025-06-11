@@ -6,6 +6,6 @@ export default withNuxt({
     "@typescript-eslint/no-explicit-any": "off",
     "eol-last": "off",
     "vue/html-self-closing": "off",
-    "vue/no-multiple-template-root": "off"
+    "vue/no-multiple-template-root": "off",
   },
 });
