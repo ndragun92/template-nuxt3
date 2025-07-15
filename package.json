@@ -21,26 +21,26 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint": "^1.4.1",
+    "@nuxt/eslint": "^1.5.2",
     "@nuxt/image": "^1.10.0",
     "@pinia/nuxt": "^0.11.1",
-    "@vueuse/core": "^13.3.0",
-    "@vueuse/nuxt": "^13.3.0",
-    "eslint": "^9.28.0",
+    "@vueuse/core": "^13.5.0",
+    "@vueuse/nuxt": "^13.5.0",
+    "eslint": "^9.31.0",
     "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-prettier": "^5.4.1",
-    "nuxt": "3.16.2",
+    "eslint-plugin-prettier": "^5.5.1",
+    "nuxt": "3.17.7",
     "nuxt-icon": "^0.6.10",
     "nuxt-security": "^2.2.0",
-    "prettier": "^3.5.3",
-    "vue-tsc": "^2.2.10"
+    "prettier": "^3.6.2",
+    "vue-tsc": "^3.0.1"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.11.4",
-    "@tailwindcss/vite": "^4.1.8",
-    "@vueuse/nuxt": "^13.3.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "@vueuse/nuxt": "^13.5.0",
     "pinia": "^3.0.3",
-    "tailwindcss": "^4.1.8"
+    "tailwindcss": "^4.1.11"
   },
   "resolutions": {
     "cheerio": "1.0.0-rc.12"

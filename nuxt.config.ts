@@ -12,7 +12,7 @@ export default defineNuxtConfig({
 
   typescript: {
     // Enables strict typeCheck for development environment
-    typeCheck: process.env.NODE_ENV === "development",
+    typeCheck: "build",
     strict: process.env.NODE_ENV === "development",
   },
 
@@ -58,8 +58,49 @@ export default defineNuxtConfig({
 
   css: ["~/assets/css/main.css"],
 
+  sourcemap: true,
+
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [
+      tailwindcss(),
+      {
+        apply: "build",
+        name: "vite-plugin-ignore-sourcemap-warnings",
+        configResolved(config) {
+          const originalOnWarn = config.build.rollupOptions.onwarn;
+          config.build.rollupOptions.onwarn = (warning, warn) => {
+            if (
+              warning.code === "SOURCEMAP_BROKEN" &&
+              warning.plugin === "@tailwindcss/vite:generate:build"
+            ) {
+              return;
+            }
+            if (
+              warning.code === "PLUGIN_WARNING" &&
+              warning.plugin === "vite:reporter"
+            ) {
+              return;
+            }
+
+            if (originalOnWarn) {
+              originalOnWarn(warning, warn);
+            } else {
+              warn(warning);
+            }
+          };
+        },
+      },
+    ],
+    $client: {
+      build: {
+        rollupOptions: {
+          output: {
+            entryFileNames: "_nuxt/[name].[hash].js",
+            chunkFileNames: "_nuxt/[name].[hash].js",
+          },
+        },
+      },
+    },
   },
 
   pinia: {
