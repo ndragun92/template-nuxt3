@@ -1,6 +1,6 @@
-# Nuxt 3 Starter Template
+# Nuxt 4 Starter Template
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Look at the [Nuxt 4 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 Live preview version [Template](https://template-nuxt3-ndragun92.vercel.app)
 

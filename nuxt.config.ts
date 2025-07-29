@@ -4,11 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  future: {
-    compatibilityVersion: 4,
-  },
-
-  compatibilityDate: "2024-07-11",
+  compatibilityDate: '2025-07-15',
 
   typescript: {
     // Enables strict typeCheck for development environment
@@ -112,7 +108,7 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@nuxt/fonts",
     "@pinia/nuxt", // https://pinia.vuejs.org/ssr/nuxt.html
-    "nuxt-icon", // https://github.com/nuxt-modules/icon | https://icones.js.org/collection/all?s=github
+    '@nuxt/icon',
     "@vueuse/nuxt", // https://vueuse.org/guide/#nuxt
     "@nuxt/image", // https://image.nuxt.com
   ],

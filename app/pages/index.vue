@@ -2,7 +2,7 @@
   <div class="p-8 text-center">
     <NuxtImg class="block mx-auto w-12" src="/favicon.png" />
     <h1 class="font-bold mt-12 text-center">
-      Welcome to Nuxt 3 Starter Template Kit
+      Welcome to Nuxt 4 Starter Template Kit
     </h1>
     <h2 class="font-semibold mb-2 mt-10">Included Modules:</h2>
     <ul class="flex flex-col gap-2">
@@ -34,9 +34,9 @@
       <li>
         <a
           class="hover:underline text-blue-500"
-          href="https://github.com/nuxt-modules/icon"
+          href="https://nuxt.com/modules/icon"
           target="_blank"
-          >nuxt-icon</a
+          >@nuxt/icon</a
         >
       </li>
       <li>
