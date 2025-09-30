@@ -21,26 +21,26 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint": "^1.7.1",
-    "@nuxt/image": "^1.10.0",
+    "@nuxt/eslint": "^1.9.0",
+    "@nuxt/image": "^1.11.0",
     "@pinia/nuxt": "^0.11.2",
-    "@vueuse/core": "^13.6.0",
-    "@vueuse/nuxt": "^13.6.0",
-    "eslint": "^9.32.0",
+    "@vueuse/core": "^13.9.0",
+    "@vueuse/nuxt": "^13.9.0",
+    "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.3",
-    "nuxt": "^4.0.2",
-    "@nuxt/icon": "^1.15.0",
-    "nuxt-security": "^2.3.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "nuxt": "^4.1.2",
+    "@nuxt/icon": "^2.0.0",
+    "nuxt-security": "^2.4.0",
     "prettier": "^3.6.2",
-    "vue-tsc": "^3.0.4"
+    "vue-tsc": "^3.1.0"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.11.4",
-    "@tailwindcss/vite": "^4.1.11",
-    "@vueuse/nuxt": "^13.6.0",
+    "@tailwindcss/vite": "^4.1.13",
+    "@vueuse/nuxt": "^13.9.0",
     "pinia": "^3.0.3",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.13"
   },
   "resolutions": {
     "cheerio": "1.0.0-rc.12"
