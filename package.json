@@ -17,30 +17,30 @@
     "typecheck": "nuxt typecheck"
   },
   "engines": {
-    "node": "22.x"
+    "node": ">=22.0.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint": "^1.9.0",
+    "@nuxt/eslint": "^1.10.0",
     "@nuxt/image": "^1.11.0",
     "@pinia/nuxt": "^0.11.2",
-    "@vueuse/core": "^13.9.0",
-    "@vueuse/nuxt": "^13.9.0",
-    "eslint": "^9.36.0",
+    "@vueuse/core": "^14.0.0",
+    "@vueuse/nuxt": "^14.0.0",
+    "eslint": "^9.38.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
-    "nuxt": "^4.1.2",
-    "@nuxt/icon": "^2.0.0",
+    "nuxt": "^4.2.0",
+    "@nuxt/icon": "^2.1.0",
     "nuxt-security": "^2.4.0",
     "prettier": "^3.6.2",
-    "vue-tsc": "^3.1.0"
+    "vue-tsc": "^3.1.2"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.11.4",
-    "@tailwindcss/vite": "^4.1.13",
-    "@vueuse/nuxt": "^13.9.0",
+    "@tailwindcss/vite": "^4.1.16",
+    "@vueuse/nuxt": "^14.0.0",
     "pinia": "^3.0.3",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.1.16"
   },
   "resolutions": {
     "cheerio": "1.0.0-rc.12"
