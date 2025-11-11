@@ -54,7 +54,7 @@ export default defineNuxtConfig({
 
   css: ["~/assets/css/main.css"],
 
-  sourcemap: true,
+  sourcemap: process.env.NODE_ENV === 'development',
 
   vite: {
     plugins: [
