@@ -21,6 +21,15 @@ export default defineNuxtConfig({
     asyncContext: true,
     appManifest: false,
     buildCache: false, // Build Cache
+    typedPages: true,
+    headNext: true,
+    inlineRouteRules: true,
+    sharedPrerenderData: true,
+    cookieStore: true,
+    browserDevtoolsTiming: process.env.NODE_ENV === "development",
+    lazyHydration: true, // This feature intelligently determines when to hydrate lazy components based on visibility, idle time, or other triggers, improving performance by deferring hydration of components until they're needed.
+    purgeCachedData: true, // Nuxt will automatically purge cached data from `useAsyncData` and `nuxtApp.static.data`. This helps prevent memory leaks and ensures fresh data is loaded when needed, but it is possible to disable it.
+    typescriptPlugin: true
   },
 
   imports: {
