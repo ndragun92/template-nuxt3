@@ -5,6 +5,8 @@ Look at the [Nuxt 4 documentation](https://nuxt.com/docs/getting-started/introdu
 Live preview version [Template](https://template-nuxt3-ndragun92.vercel.app)
 
 ## What does this starter template contain?
+
+- Nuxt a11y module
 - Nuxt security module
 - ESLint module
 - Strict typeCheck (enabled in development)

@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
 
   typescript: {
     // Enables strict typeCheck for development environment
@@ -29,7 +29,7 @@ export default defineNuxtConfig({
     browserDevtoolsTiming: process.env.NODE_ENV === "development",
     lazyHydration: true, // This feature intelligently determines when to hydrate lazy components based on visibility, idle time, or other triggers, improving performance by deferring hydration of components until they're needed.
     purgeCachedData: true, // Nuxt will automatically purge cached data from `useAsyncData` and `nuxtApp.static.data`. This helps prevent memory leaks and ensures fresh data is loaded when needed, but it is possible to disable it.
-    typescriptPlugin: true
+    typescriptPlugin: true,
   },
 
   imports: {
@@ -63,7 +63,7 @@ export default defineNuxtConfig({
 
   css: ["~/assets/css/main.css"],
 
-  sourcemap: process.env.NODE_ENV === 'development',
+  sourcemap: process.env.NODE_ENV === "development",
 
   vite: {
     plugins: [
@@ -112,11 +112,17 @@ export default defineNuxtConfig({
     storesDirs: ["./app/store/**"],
   },
 
-  modules: [// https://nuxt.com/modules/security
-  "nuxt-security", "@nuxt/eslint", "@nuxt/fonts", // https://pinia.vuejs.org/ssr/nuxt.html
-  "@pinia/nuxt", '@nuxt/icon', // https://vueuse.org/guide/#nuxt
-  "@vueuse/nuxt", // https://image.nuxt.com
-  "@nuxt/image", "@nuxt/a11y"],
+  modules: [
+    // https://nuxt.com/modules/security
+    "nuxt-security",
+    "@nuxt/eslint",
+    "@nuxt/fonts", // https://pinia.vuejs.org/ssr/nuxt.html
+    "@pinia/nuxt",
+    "@nuxt/icon", // https://vueuse.org/guide/#nuxt
+    "@vueuse/nuxt", // https://image.nuxt.com
+    "@nuxt/image",
+    "@nuxt/a11y",
+  ],
 
   image: {},
 

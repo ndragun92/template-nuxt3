@@ -1,3 +1,4 @@
+<script setup lang="ts"></script>
 <template>
   <main class="p-8 text-center">
     <NuxtImg class="block mx-auto w-12" src="/favicon.png" alt="Favicon" />
@@ -53,6 +54,14 @@
           href="https://image.nuxt.com"
           target="_blank"
           >@nuxt/image</a
+        >
+      </li>
+      <li>
+        <a
+          class="hover:underline text-blue-600"
+          href="https://nuxt.com/modules/a11y"
+          target="_blank"
+          >@nuxt/a11y</a
         >
       </li>
       <li class="mt-12">
