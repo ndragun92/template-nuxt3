@@ -80,10 +80,7 @@ export default defineNuxtConfig({
             ) {
               return;
             }
-            if (
-              warning.code === "PLUGIN_WARNING" &&
-              warning.plugin === "vite:reporter"
-            ) {
+            if (warning.code === "PLUGIN_WARNING" && warning.plugin === "vite:reporter") {
               return;
             }
 

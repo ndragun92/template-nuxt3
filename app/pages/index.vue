@@ -2,9 +2,7 @@
 <template>
   <main class="p-8 text-center">
     <NuxtImg class="block mx-auto w-12" src="/favicon.png" alt="Favicon" />
-    <h1 class="font-bold mt-12 text-center">
-      Welcome to Nuxt 4 Starter Template Kit
-    </h1>
+    <h1 class="font-bold mt-12 text-center">Welcome to Nuxt 4 Starter Template Kit</h1>
     <h2 class="font-semibold mb-2 mt-10">Included Modules:</h2>
     <ul class="flex flex-col gap-2">
       <li>
@@ -24,11 +22,7 @@
         >
       </li>
       <li>
-        <a
-          class="hover:underline text-blue-600"
-          href="https://tailwindcss.com"
-          target="_blank"
-        >
+        <a class="hover:underline text-blue-600" href="https://tailwindcss.com" target="_blank">
           tailwindcss
         </a>
       </li>
@@ -49,10 +43,7 @@
         >
       </li>
       <li>
-        <a
-          class="hover:underline text-blue-600"
-          href="https://image.nuxt.com"
-          target="_blank"
+        <a class="hover:underline text-blue-600" href="https://image.nuxt.com" target="_blank"
           >@nuxt/image</a
         >
       </li>
@@ -70,8 +61,7 @@
           href="https://github.com/ndragun92/template-nuxt3"
           target="_blank"
         >
-          <Icon size="24" name="mdi:github" /> Click here to check GitHub
-          Repository
+          <Icon size="24" name="mdi:github" /> Click here to check GitHub Repository
         </a>
       </li>
     </ul>
