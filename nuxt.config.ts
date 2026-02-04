@@ -112,15 +112,11 @@ export default defineNuxtConfig({
     storesDirs: ["./app/store/**"],
   },
 
-  modules: [
-    "nuxt-security", // https://nuxt.com/modules/security
-    "@nuxt/eslint",
-    "@nuxt/fonts",
-    "@pinia/nuxt", // https://pinia.vuejs.org/ssr/nuxt.html
-    '@nuxt/icon',
-    "@vueuse/nuxt", // https://vueuse.org/guide/#nuxt
-    "@nuxt/image", // https://image.nuxt.com
-  ],
+  modules: [// https://nuxt.com/modules/security
+  "nuxt-security", "@nuxt/eslint", "@nuxt/fonts", // https://pinia.vuejs.org/ssr/nuxt.html
+  "@pinia/nuxt", '@nuxt/icon', // https://vueuse.org/guide/#nuxt
+  "@vueuse/nuxt", // https://image.nuxt.com
+  "@nuxt/image", "@nuxt/a11y"],
 
   image: {},
 
