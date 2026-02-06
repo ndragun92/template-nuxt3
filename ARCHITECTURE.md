@@ -43,10 +43,10 @@ export const useCounter = (initialValue = 0) => {
 
 ## State Management with Pinia
 
-For complex state, use Pinia stores in `app/store/`:
+For complex state, use Pinia stores in `app/stores/`:
 
 ```typescript
-// app/store/userStore.ts
+// app/stores/userStore.ts
 export const useUserStore = defineStore("user", () => {
   const user = ref<User | null>(null);
   const isLoading = ref(false);

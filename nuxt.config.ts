@@ -105,10 +105,6 @@ export default defineNuxtConfig({
     },
   },
 
-  pinia: {
-    storesDirs: ["./app/store/**"],
-  },
-
   modules: [
     // https://nuxt.com/modules/security
     "nuxt-security",

@@ -1,5 +1,5 @@
 /**
- * Example Pinia store demonstrating basic state management pattern
+ * Example Pinia store demonstrating a basic state management pattern
  *
  * To use in a component:
  * ```typescript
