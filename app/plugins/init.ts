@@ -15,23 +15,8 @@
  * ```
  */
 export default defineNuxtPlugin((nuxtApp) => {
-  let host: string;
-  // Get host in case of server side request
-  if (import.meta.env.SSR) {
-    host = nuxtApp?.ssrContext?.event?.node?.req?.headers?.host || "";
-  } else {
-    host = window.location.host;
-  }
+  const host = useRequestURL();
+  nuxtApp.provide("app_origin", host.origin);
+  nuxtApp.provide("app_hostname", host.hostname);
 
-  // Determine protocol based on environment
-  const protocol = import.meta.env.SSR
-    ? process.env.NODE_ENV === "production"
-      ? "https"
-      : "http"
-    : window.location.protocol.replace(":", "");
-
-  const origin = new URL(`${protocol}://${host}`);
-  // Extract origin and set data in-app context
-  nuxtApp.provide("app_origin", origin.origin);
-  nuxtApp.provide("app_hostname", origin.hostname);
 });
