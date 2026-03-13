@@ -49,6 +49,7 @@ app/
 ### Add a New Page
 
 Create `app/pages/about.vue`:
+
 ```vue
 <template>
   <div class="p-8">
@@ -62,6 +63,7 @@ Now visit `/about` ✨
 ### Add a Reusable Component
 
 Create `app/components/Greeting.vue`:
+
 ```vue
 <template>
   <div class="text-lg font-bold">Hello {{ name }}!</div>
@@ -73,6 +75,7 @@ defineProps<{ name: string }>();
 ```
 
 Use anywhere:
+
 ```vue
 <Greeting name="World" />
 ```
@@ -80,6 +83,7 @@ Use anywhere:
 ### Use Global State (Pinia)
 
 Create `app/store/counterStore.ts`:
+
 ```typescript
 export const useCounterStore = defineStore("counter", () => {
   const count = ref(0);
@@ -89,6 +93,7 @@ export const useCounterStore = defineStore("counter", () => {
 ```
 
 In components:
+
 ```typescript
 const store = useCounterStore();
 const { count } = storeToRefs(store);
@@ -105,14 +110,14 @@ store.increment();
 
 ## Key Files to Know
 
-| File | Purpose |
-|------|---------|
-| `README.md` | Project overview |
-| `CONTRIBUTING.md` | How to contribute |
-| `DEVELOPMENT.md` | Detailed dev guide |
+| File              | Purpose              |
+| ----------------- | -------------------- |
+| `README.md`       | Project overview     |
+| `CONTRIBUTING.md` | How to contribute    |
+| `DEVELOPMENT.md`  | Detailed dev guide   |
 | `ARCHITECTURE.md` | Project architecture |
-| `nuxt.config.ts` | Nuxt configuration |
-| `.env.example` | Environment template |
+| `nuxt.config.ts`  | Nuxt configuration   |
+| `.env.example`    | Environment template |
 
 ## Getting Help
 
