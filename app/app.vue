@@ -20,6 +20,7 @@
         <Link rel="apple-touch-startup-image" href="/favicon.png" />
       </Head>
     </Html>
+    <NuxtAnnouncer />
     <NuxtRouteAnnouncer />
     <NuxtPage />
   </NuxtLayout>
