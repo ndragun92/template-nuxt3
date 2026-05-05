@@ -15,9 +15,8 @@ Live preview version [Template](https://template-nuxt3-ndragun92.vercel.app)
 - Nuxt Icons
 - Vue Use
 - Nuxt Image
-- Loaded a main scss entry file
-- Injected scss utils which are globally available
-- Works with Node 20.x
+- Loaded a main CSS entry file
+- Works with Node 22+
 
 ## Setup
 

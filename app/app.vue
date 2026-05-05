@@ -9,10 +9,10 @@
         <Meta name="description" content="Template" />
         <Meta property="og:description" content="Template" />
         <Meta name="twitter:description" content="Template" />
+        <Meta name="twitter:card" content="summary_large_image" />
         <Meta property="og:image" content="/favicon.png" />
         <Meta name="twitter:image" content="/favicon.png" />
-        <Meta property="og:site_name" content="/favicon.png" />
-        <Meta name="twitter:site" content="/favicon.png" />
+        <Meta property="og:site_name" content="Template" />
         <Meta name="url" :content="`${nuxtApp?.$app_origin}${$route?.path}`" />
         <Meta property="og:url" :content="`${nuxtApp?.$app_origin}${$route?.path}`" />
         <Link rel="icon" type="image/x-icon" href="/favicon.ico" />

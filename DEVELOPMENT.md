@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- **Node.js**: Version 24.0.0 or higher (use `.nvmrc` with nvm)
+- **Node.js**: Version 22.0.0 or higher (use `.nvmrc` with nvm)
 - **npm**: Comes with Node.js
 
 ### Using NVM (Node Version Manager)
