@@ -12,26 +12,6 @@ export default defineNuxtConfig({
     strict: process.env.NODE_ENV === "development",
   },
 
-  experimental: {
-    defaults: {
-      nuxtLink: {
-        prefetchedClass: "link--prefetched",
-      },
-    },
-    asyncContext: true,
-    appManifest: false,
-    buildCache: false, // Build Cache
-    typedPages: true,
-    headNext: true,
-    inlineRouteRules: true,
-    sharedPrerenderData: true,
-    cookieStore: true,
-    browserDevtoolsTiming: process.env.NODE_ENV === "development",
-    lazyHydration: true, // This feature intelligently determines when to hydrate lazy components based on visibility, idle time, or other triggers, improving performance by deferring hydration of components until they're needed.
-    purgeCachedData: true, // Nuxt will automatically purge cached data from `useAsyncData` and `nuxtApp.static.data`. This helps prevent memory leaks and ensures fresh data is loaded when needed, but it is possible to disable it.
-    typescriptPlugin: true,
-  },
-
   imports: {
     dirs: [
       // support deep nested composables
@@ -53,12 +33,7 @@ export default defineNuxtConfig({
   },
 
   eslint: {
-    config: {
-      // stylistic: {
-      //   commaDangle: 'never',
-      //   braceStyle: '1tbs'
-      // }
-    },
+    config: {},
   },
 
   css: ["~/assets/css/main.css"],
@@ -99,6 +74,15 @@ export default defineNuxtConfig({
     $client: {
       build: {
         rollupOptions: {
+          onwarn(warning, warn) {
+            // With the update to nuxt 4.4.2 a ton of messages about missing sourcemaps started to appear, but sourcemaps
+            // are disabled by default on nuxt and we do not want them, and thus there is no need to worry about the
+            // warning, so just ignore these.
+            if (warning.code === "SOURCEMAP_BROKEN") {
+              return; // ignore
+            }
+            warn(warning);
+          },
           output: {
             entryFileNames: "_nuxt/[name].[hash].js",
             chunkFileNames: "_nuxt/[name].[hash].js",
