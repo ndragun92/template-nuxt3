@@ -11,10 +11,7 @@ const CLEANUP_TARGETS = [
   "DEVELOPMENT.md",
   "DOCS.md",
   "QUICKSTART.md",
-  "START_HERE.md",
-  "app/pages/index.vue",
-  "app/plugins/init.ts",
-  "app/stores/exampleStore.ts",
+  "START_HERE.md"
 ];
 
 const hasYesFlag = process.argv.includes("--yes") || process.argv.includes("-y");
