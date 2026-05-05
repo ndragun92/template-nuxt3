@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
-import { access, rm } from "node:fs/promises";
+import { access, readdir, rm, rmdir } from "node:fs/promises";
 import { constants } from "node:fs";
 import readline from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
 import { fileURLToPath } from "node:url";
+import { dirname } from "node:path";
 
 const CLEANUP_TARGETS = [
   "ARCHITECTURE.md",
@@ -17,6 +18,7 @@ const CLEANUP_TARGETS = [
 
 const hasYesFlag = process.argv.includes("--yes") || process.argv.includes("-y");
 const SELF_TARGET = fileURLToPath(new URL(import.meta.url));
+const SELF_DIR = dirname(SELF_TARGET);
 
 async function fileExists(path) {
   try {
@@ -68,6 +70,14 @@ async function cleanupTemplate() {
   for (const target of deletableTargets) {
     await rm(target, { recursive: true, force: true });
     output.write(`Deleted: ${target}\n`);
+  }
+
+  if (await fileExists(SELF_DIR)) {
+    const remainingEntries = await readdir(SELF_DIR);
+    if (remainingEntries.length === 0) {
+      await rmdir(SELF_DIR);
+      output.write(`Deleted empty directory: ${SELF_DIR}\n`);
+    }
   }
 
   output.write(
