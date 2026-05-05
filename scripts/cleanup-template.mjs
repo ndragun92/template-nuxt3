@@ -4,6 +4,7 @@ import { access, rm } from "node:fs/promises";
 import { constants } from "node:fs";
 import readline from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
+import { fileURLToPath } from "node:url";
 
 const CLEANUP_TARGETS = [
   "ARCHITECTURE.md",
@@ -11,10 +12,11 @@ const CLEANUP_TARGETS = [
   "DEVELOPMENT.md",
   "DOCS.md",
   "QUICKSTART.md",
-  "START_HERE.md"
+  "START_HERE.md",
 ];
 
 const hasYesFlag = process.argv.includes("--yes") || process.argv.includes("-y");
+const SELF_TARGET = fileURLToPath(new URL(import.meta.url));
 
 async function fileExists(path) {
   try {
@@ -47,18 +49,23 @@ async function cleanupTemplate() {
     }
   }
 
-  if (existingTargets.length === 0) {
+  const deletableTargets = [...existingTargets];
+  if (await fileExists(SELF_TARGET)) {
+    deletableTargets.push(SELF_TARGET);
+  }
+
+  if (deletableTargets.length === 0) {
     output.write("No cleanup targets found. Nothing to delete.\n");
     return;
   }
 
-  const shouldContinue = hasYesFlag || (await askForConfirmation(existingTargets));
+  const shouldContinue = hasYesFlag || (await askForConfirmation(deletableTargets));
   if (!shouldContinue) {
     output.write("Cleanup canceled.\n");
     return;
   }
 
-  for (const target of existingTargets) {
+  for (const target of deletableTargets) {
     await rm(target, { recursive: true, force: true });
     output.write(`Deleted: ${target}\n`);
   }
