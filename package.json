@@ -8,6 +8,7 @@
     "generate": "nuxt generate",
     "start": "node .output/server/index.mjs",
     "preview": "nuxt preview",
+    "template:cleanup": "node ./scripts/cleanup-template.mjs",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "eslint:fix": "eslint . --fix",

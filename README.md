@@ -27,6 +27,17 @@ Make sure to install the dependencies:
 npm install
 ```
 
+## Cleanup Template Files
+
+If you are using this as a starter for a new project, you can remove template docs
+and demo starter files with:
+
+```bash
+npm run template:cleanup
+```
+
+Use `npm run template:cleanup -- --yes` to skip the confirmation prompt.
+
 ## Development Server
 
 Start the development server on http://localhost:3000
