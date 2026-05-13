@@ -18,7 +18,7 @@
     "typecheck": "nuxt typecheck"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=24.0.0"
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.3",
@@ -28,23 +28,23 @@
     "@nuxt/icon": "^2.2.2",
     "@nuxt/image": "^2.0.0",
     "@pinia/nuxt": "^0.11.3",
-    "@types/node": "^25.6.0",
+    "@types/node": "^25.7.0",
     "@vueuse/core": "^14.3.0",
     "@vueuse/nuxt": "^14.3.0",
-    "baseline-browser-mapping": "^2.10.27",
+    "baseline-browser-mapping": "^2.10.29",
     "eslint": "^10.3.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
-    "nuxt": "^4.4.4",
-    "nuxt-security": "^2.5.1",
+    "nuxt": "^4.4.5",
+    "nuxt-security": "^2.6.0",
     "prettier": "^3.8.3",
-    "vue-tsc": "^3.2.8"
+    "vue-tsc": "^3.2.9"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.14.0",
-    "@tailwindcss/vite": "^4.2.4",
+    "@tailwindcss/vite": "^4.3.0",
     "@vueuse/nuxt": "^14.3.0",
     "pinia": "^3.0.4",
-    "tailwindcss": "^4.2.4"
+    "tailwindcss": "^4.3.0"
   }
 }
